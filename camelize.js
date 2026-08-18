@@ -1,7 +1,7 @@
-let word = prompt("Give me your dashed word");
+let dashedWord = prompt("Give me your dashed word");
 
 function turnToArray (str) {
-    return word.split("-");
+    return str.split("-");
 }
 
 function capitalize(str) {
@@ -31,5 +31,5 @@ function camelizeString (str) {
     return camelizedString;
 }
 
-console.log(`Your word: ${word}`)
-console.log(`Camelized Word: ${camelizeString(word)}`);
+console.log(`Your word: ${dashedWord}`)
+console.log(`Camelized Word: ${camelizeString(dashedWord)}`);
