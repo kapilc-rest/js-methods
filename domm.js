@@ -32,3 +32,20 @@ paraInDiv.textContent = "ME TOO!";
 newDiv.appendChild(heading1);
 newDiv.appendChild(paraInDiv);
 container.appendChild(newDiv);
+
+const btn1 = document.querySelector("#btn1");
+btn1.onclick = () => alert("Hello World1");
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+  alert("Hello World");
+});
+btn.addEventListener("click", function (e) {
+  console.log(e);
+});
+btn.addEventListener("click", function (e) {
+  console.log(e.target);
+});
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
