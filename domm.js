@@ -49,3 +49,11 @@ btn.addEventListener("click", function (e) {
 btn.addEventListener("click", function (e) {
   e.target.style.background = "blue";
 });
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+  // and for each one we add a 'click' listener
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
