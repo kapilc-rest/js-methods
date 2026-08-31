@@ -38,17 +38,17 @@
             e.preventDefault();
             let val = input.value;
             input.value = "";
-            let listElement = document.createElement("li");
+            span.textContent = val;
+            list.appendChild(listElement);
+        }
+        let listElement = document.createElement("li");
         let span = document.createElement("span");
         let button2 = document.createElement("button");
         listElement.appendChild(span);
         listElement.appendChild(button2);
-        span = input.value;
         button2.textContent = "Delete";
-        list.appendChild(listElement);
-        button2.addEventListener("click",listElement.remove());
-        }
         button.addEventListener("click", clickButton);
+        button2.addEventListener("click",listElement.remove());
     </script>
   </body>
 </html>
