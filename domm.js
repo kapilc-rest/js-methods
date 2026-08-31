@@ -18,11 +18,10 @@ const subHeading3 = document.createElement("h3");
 subHeading3.style.color = "blue";
 subHeading3.textContent = "I'm blue h3";
 container.appendChild(subHeading3);
-
+//adding new div with elements
 const newDiv = document.createElement("div");
 newDiv.style.border = "solid 1px black";
 newDiv.style.backgroundColor = "pink";
-container.appendChild(newDiv);
 
 const heading1 = document.createElement("h1");
 heading1.textContent = "I'm in a div";
@@ -32,3 +31,4 @@ paraInDiv.textContent = "ME TOO!";
 
 newDiv.appendChild(heading1);
 newDiv.appendChild(paraInDiv);
+container.appendChild(newDiv);
